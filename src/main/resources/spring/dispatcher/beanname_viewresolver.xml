@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- View 이름을 객체(Bean)로 연결시켜주는 객체 --> <!-- 객체를 찾는것 -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<!-- InternalResourcesViewResolver 보다 먼저 해석 -->
+		<property name="order" value="0" />
+	</bean>
+
+</beans>
